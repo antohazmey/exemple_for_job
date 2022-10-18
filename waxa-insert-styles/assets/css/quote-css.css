@@ -1,0 +1,23 @@
+.text_block .comment {
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    font-family: var(--general-font);
+    font-size: 13px;
+    font-weight: 700;
+    justify-content: flex-start;
+    letter-spacing: .08em;
+    margin-bottom: 18px;
+    position: relative;
+}
+.article .text_block p, .article .text_block ul {
+    font-size: 22px;
+    line-height: 34px;
+    margin-bottom: 30px;
+}
+hr {
+    background: var(--border-color-2);
+    border: none;
+    height: 1px;
+    margin: 11px 0 10px;
+}
