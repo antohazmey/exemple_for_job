@@ -1,0 +1,526 @@
+/*
+Theme Name: GeneratePress Child
+Theme URI: https://generatepress.com
+Template: generatepress
+Author: Tom Usborne
+Author URI: https://tomusborne.com
+Description: GeneratePress is a lightweight WordPress theme built with a focus on speed and usability. Performance is important to us, which is why a fresh GeneratePress install adds less than 10kb (gzipped) to your page size. We take full advantage of the new block editor (Gutenberg), which gives you more control over creating your content. If you use page builders, GeneratePress is the right theme for you. It is completely compatible with all major page builders, including Beaver Builder and Elementor. Thanks to our emphasis on WordPress coding standards, we can boast full compatibility with all well-coded plugins, including WooCommerce. GeneratePress is fully responsive, uses valid HTML/CSS and is translated into over 25 languages by our amazing community of users. A few of our many features include microdata integration, 9 widget areas, 5 navigation locations, 5 sidebar layouts, dropdown menus (click or hover) and navigation color presets. Learn more and check out our powerful premium version at https://generatepress.com
+Tags: two-columns,three-columns,one-column,right-sidebar,left-sidebar,footer-widgets,blog,e-commerce,flexible-header,full-width-template,buddypress,custom-header,custom-background,custom-menu,custom-colors,sticky-post,threaded-comments,translation-ready,rtl-language-support,featured-images,theme-options
+Version: 3.0.2.1609208715
+Updated: 2020-12-29 11:25:15
+
+*/
+.userlist.flex-block-list {
+  min-height: 400px;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
+	
+}
+
+.userlist.flex-block-list .user-single {
+	width: 235px;
+	margin: 5px;
+    flex: 0 0 auto;
+    text-align: center;
+    background: white;
+    box-shadow: 0 0 5px #dadada;
+	padding: 10px;
+	margin-top: 40px;
+	transition: all .4s;
+}
+
+.userlist.flex-block-list .user-single-top img {
+	border-radius: 50%;
+	box-shadow: 0 -1px 5px #dadada;
+	transition: all .4s;
+}
+
+.userlist.flex-block-list .user-single-top {
+	position: relative;
+	margin-top: -40px;
+}
+
+.userlist.flex-block-list .user-single:hover {
+    box-shadow: 0 0 5px #989898;
+    transition: all .4s;
+}
+.userlist.flex-block-list .user-single:hover .user-single-top img {
+    box-shadow: 0 -1px 2px #989898;
+    transition: all .4s;
+}
+
+.userlist.flex-block-list .user-avatar {
+    display: block;
+    width: 70px;
+    margin: 0 auto 10px;
+}
+
+.userlist.flex-block-list .user-single-top p{
+	font-size: 12px;
+    color: #868686;
+	margin: 5px 0;
+    font-style: italic;
+}
+
+/* Социальные ссылки*/
+.userlist.flex-block-list #social-link-rcl .social-link {
+	float: none;
+	display:inline-block;
+}
+.userlist.flex-block-list #social-link-rcl {
+	margin: 5px 0;
+}
+/* Ачивки */
+
+.userlist.flex-block-list .achiev-list-userlist .achiev > p {
+	display:none;
+}
+
+.userlist.flex-block-list .achiev-list-userlist .achiev {
+	width: 48px;
+	margin: auto;
+}
+.userlist.flex-block-list .achiev-list-userlist .achiev .achiev-img > img {
+	width: 36px;
+	height: 36px;
+}
+
+.userlist.flex-block-list .achiev-list-userlist:before {
+    content: "";
+    display: block;
+    border-top: 1px solid #e8e8e8;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #929292;
+}
+
+/* Конец Ачивки */
+
+.userlist.flex-block-list .user-profile-link {
+	background: #e9e9e9;
+    padding: 3px 8px;
+    margin-top: 10px;
+    display: inline-block;
+    width: auto;
+    color: #797979;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+	transition: all .4s;
+}
+
+.userlist.flex-block-list .user-profile-link:hover {
+	text-decoration:none;
+	background: #e4e2e2;
+	transition: all .4s;
+}
+
+.userlist.flex-block-list .profile-link {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.userlist.flex-block-list .filter-data {
+    display: block;
+	margin: 3px 0;
+    font-size: 12px;
+    color: #717171;
+}
+.userlist.flex-block-list .filter-data i {
+	margin-right: 5px;
+}
+
+.userlist.flex-block-list .ballun-status {
+	display: none;
+}
+
+.userlist.flex-block-list .rating-rcl .rating-plus,
+.userlist.flex-block-list .rating-rcl .rating-minus,
+.userlist.flex-block-list .rating-rcl .rating-null {
+	background: none;
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+	top: 40px;
+}
+.width-100 #main{
+	margin-right: 0px !important;
+}
+.width-100{
+	width: 100%;
+}
+
+/* Стили живого поиска */
+#searchform .search-field:focus{
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.65);
+    position: relative;
+    z-index: 1051;
+}
+#searchform .search-field:focus ~ #searchsubmit{
+    position: relative; 
+    z-index: 1100;
+}
+.codyshop-ajax-search li{
+    overflow: hidden; 
+    line-height: 17px;
+    width: 100%; 
+    min-height: 100px; 
+    max-height: 100px; 
+    display: inline-block; 
+    float: left;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eeeeee;
+    padding: 15px 10px;
+    list-style:none;
+}
+.codyshop-ajax-search{
+    position: fixed; 
+    box-sizing: border-box; 
+    background: #fff; 
+    z-index: 1111; 
+    border-radius: 3px; 
+    border:1px solid #eee;
+    border-top:none; 
+    padding: 20px 20px 10px 20px; 
+    display: none; 
+    max-height: 500px; 
+    overflow-y: auto;
+}
+.codyshop-ajax-search li:first-child{
+    padding: 0 10px 15px 10px;
+}
+.codyshop-ajax-search li:last-child {
+    padding: 15px 10px 0 10px; 
+    border-bottom: none;
+}
+.codyshop-ajax-search li a{
+    color: #7c83a0;
+}
+.codyshop-ajax-search span {
+    height: 100%; 
+    float: left; 
+    min-height: 100px;
+}
+.codyshop-ajax-search li p, .codyshop-latest-post li p{
+    line-height: 14px; 
+    font-size: 13px;
+    color: #7c83a0;
+    font-style: italic; 
+    background-color: white;
+}
+.codyshop-ajax-search li img, .codyshop-latest-post li img{
+    width: 60px; 
+    float: left; 
+    border: 2px solid #eeeeee; 
+    background-color: #eeeeee; 
+    border-radius: 50%; 
+    margin-right: 10px;
+}
+
+/* Стили формы поиска */
+.inside-navigation{
+    position: relative;
+}
+.responce-search{
+    position: absolute;
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    width: 50%;
+    border-top: none;
+    box-shadow: 0px 0px 5px #2d2d2d;
+    background: #fff;
+    z-index: 100;
+    max-height: 200px;
+    border-radius: 3px;
+    margin-top: 20px;
+    display: none;
+    overflow: auto;
+}
+.vis{
+    display: block;
+}
+.responce-search img{
+    width: 5%;
+    margin-left: 47.5%;
+}
+
+/*Стили скрытия показа пароля*/
+.rcl-field-core .vis-pass-field{
+    width: 95% !important;
+    border-right: none !important;
+}
+.vis-pass-cont{
+    display: inline-block;
+    width: 5%;
+    background-color: #fff;
+    border-radius: 0;
+    border: 1px solid red;
+    box-shadow: none;
+    box-sizing: border-box;
+    float: none;
+    font-size: 100%;
+    height: auto;
+    line-height: 1.4;
+    margin: 0;
+    max-width: 100%;
+    outline: 0;
+    padding: 5px 10px;
+    text-align:center;
+    border-left: none;
+}
+.vis-pass-cont .fa{
+    cursor: pointer;
+}
+.grey-border{
+    border-color: #c5c5c5 !important;
+}
+.light-grey-border{
+     border-color: #ddd !important;
+}
+.rcl-field-core .little-form-pass-field{
+    width: 90% !important;
+}
+.little-form-pass-vis-cont{
+    width: 10%;
+}
+
+/* Стили форм регистрации и входа */
+.rcl-field-core .main-form-field-pass{
+    width: 85% !important;
+    border-right: none !important;
+    margin: 5px 0px !important;
+    display: inline-block !important;
+    top: 0px !important;
+}
+.form-block-rcl.default-field .fa-my-custom{
+    position: relative !important;
+}
+.custom-form-main-icon{
+    width: 15%;
+    vertical-align: middle;
+    padding-top: 4px;
+    margin: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+@media(max-width: 800px){
+    #primary{
+    width: 100% !important;
+}
+}
+
+
+/*Стили вызова мобильного сайд бара*/
+
+#mbspro_bttn_custom .rcli{
+    color: #fff;
+    cursor: pointer;
+    font-size:20px;
+}
+
+#mbspro_bttn_custom{
+    background: rgb(76,140,189);
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+    width: 22px;
+}
+.cont-callback-bt-mobile-sidebar{
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    width: 100%;
+    transition: all 0.5s;
+    z-index: 30;
+    height: 100%;
+}
+.content-mobile-sidebar{
+    background: #fff;
+    border: 4px solid rgb(76,140,189);
+    overflow: auto;
+    width: calc(100% - 20px);
+    overflow: auto;
+
+}
+.open-mobile-sidebar{
+    right: 0px !important;
+}
+.cont-forum-mobile-sidebar{
+    padding: 30px;
+}
+.cont-callback-bt-mobile-sidebar{
+    display: none;
+}
+.vis-flex{
+    display: flex;
+}
+
+.footer-widget-1{
+    width: 100%;
+}
+
+.form-block-rcl .g-recaptcha{
+    margin-bottom: 30px;
+}
+.form-block-rcl .g-recaptcha > div{
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 294px !important;
+}
+.form-block-rcl .g-recaptcha iframe{
+    width: 100%;
+}
+
+.vis-pass-cont .rcli{
+    position: relative !important;
+    top: 0px !important;
+    left: 0px !important;
+}
+
+.rcl-field-input input:not([type="file"]):not([type="checkbox"]):not([type="radio"]):not([type="button"]), .rcl-field-input textarea{
+    line-height: normal !important;
+}
+.vis-pass-cont .rcli, .vis-pass-cont{
+     line-height: normal !important;
+     margin: 0px !important;
+}
+#rcl-field-user_pass .rcl-field-core{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#rcl-field-user_pass .rcl-field-core .password-field{
+    margin: 0px !important;
+}
+
+.uit_avatar img{
+    height: auto !important;
+    display: block;
+}
+.uit_avatar .avatar-image {
+    height: auto !important;
+    position: relative;
+}
+
+/*Стили для меток*/
+
+.mark-field{
+    list-style: none;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.mark-input-cont{
+    position:relative;
+}
+.responce-mark{
+    position: absolute;
+    width: 100%;
+    display:none;
+    height: auto;
+    max-height: 200px;
+    overflow: auto;
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0px 5px 5px #888;
+    z-index: 1;
+}
+.mark-text{
+    padding: 5px;
+    margin-bottom: 0px !important;
+}
+.mark-text:hover{
+    background: #eee;
+    cursor: pointer;
+}
+.mark-item{
+    margin-right: 5px;
+    padding: 5px 5px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+.selected-mark-value{
+    margin-bottom: 0px;
+    display: inline-block;
+}
+.mark-input-cont{
+    padding: 0px;
+    border:none;
+    flex: 1;
+}
+.remove-mark{
+    font-size: 12px;
+    margin-left: 5px;
+}
+.remove-mark:hover{
+    cursor: pointer;
+    color: red;
+}
+.no-search-mark{
+    margin-bottom: 0px !important;
+    padding: 5px;
+}
+.add_custom_mark_label{
+    margin-bottom: 0px !important;
+    padding: 5px;
+}
+.add_custom_mark_label:hover{
+     cursor: pointer;
+     background: #eee;
+}
+.add_custom_mark_label:hover span{
+    color: red;
+}
+#rcl-field-marktask-tags, #rcl-field-markservice-tags{
+    display: none;
+}
+.text-service{
+    padding: 5px;
+    margin-bottom: 0px !important;
+}
+.text-service:hover{
+    background: #eee;
+    cursor: pointer;
+}
+.container-switch-work{
+    display: flex;
+    margin: 0px 15px;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid #eaeaea;
+}
+.switch-main-cont{
+    box-sizing: border-box;
+    padding: 5px 10px
+}
+.text-switch{
+    font-size: 15px;
+}
+.switch-cont-free{
+    border-right: 1px solid #eaeaea;
+}
+.switch-cont-work{
+    border-left: 1px solid #eaeaea;
+}
+.container-switch-work .activate{
+    background: #eaeaea;
+}
+.switch-main-cont:hover{
+    background: #eaeaea;
+    cursor: pointer;
+}
+.status-work-text-external{
+    font-size: 15px;
+    margin: 0px 15px;
+}
+
+
+
